@@ -3,9 +3,8 @@ import "./App.css";
 
 const user = {
   name: "Carolina Acuña",
-  imageUrl:
-    "https://drive.google.com/file/d/1CMN4SRoTwEwynYYTFiBM1vBH4Zj2JRXg/view?usp=drive_link",
-  imageSize: 90,
+  imageUrl: "https://64.media.tumblr.com/tumblr_lz7vjoPGsL1qztbpfo1_500.jpg",
+  imageSize: 200,
 };
 
 function App() {
@@ -14,10 +13,18 @@ function App() {
   return (
     <>
       <div></div>
-      <h1>Carolina's Portfolio</h1>
+      <h1>{user.name}</h1>
+      <img
+        src={user.imageUrl}
+        alt={`Photo of ${user.name}`}
+        style={{
+          width: user.imageSize,
+          heigth: user.imageSize,
+        }}
+      />
       <div className='card'>
         <button onClick={() => setCount((count) => count + 1)}>
-          Click if you visited {count}
+          Click if you are here {count}
         </button>
       </div>
     </>
