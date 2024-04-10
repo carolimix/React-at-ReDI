@@ -27,7 +27,9 @@ function CharacterCounter() {
   console.log(text.length);
 
   const checkCharacterLimit = () =>
-    text.length >= characterLimit ? alert("Max characters exceeded") : null;
+    text.length >= characterLimit
+      ? alert("Max characters exceeded")
+      : console.log(text.length);
 
   function handleRefresh() {
     setText("");

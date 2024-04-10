@@ -1,11 +1,9 @@
-import CharacterCounter from "./components/CharacterCounter";
-import Counter from "./components/Counter";
+import RestaurantView from "../../react-berlin-2024-spring/src/views/RestaurantView";
 
 function App() {
   return (
     <>
-      <Counter />
-      <CharacterCounter />
+      <RestaurantView />
     </>
   );
 }
