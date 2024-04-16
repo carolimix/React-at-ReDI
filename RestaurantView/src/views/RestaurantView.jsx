@@ -26,7 +26,7 @@ const RestaurantView = () => {
   const handleItemClick = (name) => {
     let extraItems;
 
-    if (selectedItems.uncludes(name)) {
+    if (selectedItems.includes(name)) {
       extraItems = selectedItems.filter((item) => item !== name);
     } else {
       extraItems = [...selectedItems, name];
@@ -34,12 +34,10 @@ const RestaurantView = () => {
     setSelectedItems(extraItems);
   };
 
-  const clearCart = () => setSelectedItems([]);
-
   return (
     <>
       <h1>ReDI React Restaurant</h1>
-      <Cart selectedItems={selectedItems} onClick={clearCart} />
+      <Cart selectedItems={selectedItems} onClear={() => setSelectedItems([])} />
       <div className='menu'>
         <MenuItem
           name='Spaghetti'
