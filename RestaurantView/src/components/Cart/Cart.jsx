@@ -1,18 +1,49 @@
 import styles from './Cart.module.css';
+import shoppingCart from './../../assets/shoppingCart.svg';
+import { useState } from 'react';
+
+
+
+/**
+ * EXERCISE
+ * Make the drop-down show onClick of the Cart
+ * Make the dropdown disappear onMouseLeave of the drop-down itself
+ * Make the dropdown disappear when Clear the Cart
+ * Show a message of "Empty Cart" when selectedItems.length === 0
+ */
 
 const Cart = ({ selectedItems, onClear }) => {
+
+const [isCartOpen, setIsCartOpen] = useState(false);
+
+const handleToggleVisibility = () => {
+  setIsCartOpen((prevState => !prevState))
+}
   return (
-    <>
-      <div className={styles.cart}>
-        <h3>Your Cart:</h3>
-        <ul>
+      <div className={styles.cart} onClick={handleToggleVisibility}>
+        <img src={shoppingCart} alt="Shopping Cart" width={25} />
+        <div className={styles.numberOfItems}>{selectedItems.length}</div>
+    { isCartOpen && (
+      <div className={styles.dropDown}
+      onMouseLeave={handleToggleVisibility}>
+        {selectedItems.length > 0 ? (
+          <>
+          <ul>
           {selectedItems.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
         </ul>
-        {selectedItems.length > 0 && <button onClick={onClear}>CLEAR</button>}
+        <button onClick={onClear} className={styles.clearButton}>CLEAR</button>
+          </>
+        ) : (
+          <>Nothing is selected yet :/</>
+        )}
+
       </div>
-    </>
+    )}
+     
+      
+      </div>
   );
 };
 export default Cart;
