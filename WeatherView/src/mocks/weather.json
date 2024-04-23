@@ -1,0 +1,42 @@
+[
+  {
+    "image": "April.jpg",
+    "name": "April",
+    "phrase": "April showers bring May flowers!"
+  },
+  {
+    "image": "Cloudy.jpg",
+    "name": "Cloudy",
+    "phrase": "Keep your head in the clouds!"
+  },
+  {
+    "image": "Cold.jpg",
+    "name": "Cold",
+    "phrase": "Baby, it's cold outside!"
+  },
+  {
+    "image": "Rainy.jpg",
+    "name": "Rainy",
+    "phrase": "Life isn't about waiting for the storm to pass, it's about learning to dance in the rain!"
+  },
+  {
+    "image": "Snow.jpg",
+    "name": "Snow",
+    "phrase": "Let it snow, let it snow, let it snow!"
+  },
+  {
+    "image": "Sunny.jpg",
+    "name": "Sunny",
+    "phrase": "Here comes the sun, doo-doo-doo-doo!"
+  },
+  {
+    "image": "Warm.jpg",
+    "name": "Warm",
+    "phrase": "Life is better when you're warm!"
+  },
+  {
+    "image": "Windy.jpg",
+    "name": "Windy",
+    "phrase": "Winds of change are blowing!"
+  }
+]
