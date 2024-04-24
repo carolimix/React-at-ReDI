@@ -1,0 +1,38 @@
+[
+{
+  "name": "Chocolate Chip Cookies",
+  "price": 2.99,
+  "description": "Classic chocolate chip cookies baked to perfection.",
+  "image": "/images/cookie.jpg"
+},
+{
+  "name": "Cupcakes",
+  "price": 3.99,
+  "description": "Delicious cupcakes topped with frosting and sprinkles.",
+  "image": "/images/cupcakes.jpg"
+},
+{
+  "name": "Macarons",
+  "price": 5.49,
+  "description": "Colorful French macarons with a delicate almond flavor.",
+  "image": "/images/macarons.jpg"
+},
+{
+  "name": "Tiramisu",
+  "price": 6.99,
+  "description": "Decadent Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.",
+  "image": "/images/tiramisu.jpg"
+},
+{
+  "name": "Brownies",
+  "price": 4.29,
+  "description": "Rich and fudgy brownies made with premium chocolate.",
+  "image": "/images/brownies.jpg"
+},
+{
+  "name": "Alfajores",
+  "price": 4.99,
+  "description": "Traditional South American cookies filled with dulce de leche and dusted with powdered sugar.",
+  "image": "/images/alfajores.jpg"
+}
+]
