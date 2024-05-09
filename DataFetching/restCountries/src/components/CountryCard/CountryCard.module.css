@@ -1,0 +1,34 @@
+.countries {
+    background-color: #fff; /* Card background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow for depth */
+    border-radius: 2px; /* Rounded corners for the card */
+    overflow: hidden; /* Ensures the content fits within the rounded corners */
+    width: 350px; /* Fixed width, but can be responsive based on your design */
+    margin: 10px; /* Margin around each card */
+    text-align: center; /* Center text and content */
+    display: flex; /* Make it a flex container */
+    flex-direction: column; /* Arrange children in a column */
+     /* Space between content and button */
+    height: 400px; 
+  }
+  
+  .countries h3 {
+    background-color: #f1eeee; /* Light grey background for the title */
+    margin: 0; /* Remove default margin */
+    padding: 15px; /* Padding for the title */
+  }
+  
+  .countries img {
+    width: 350px; /* Make image take up full card width */
+    height: 400px; /* Keep image aspect ratio */
+    display: block; /* Ensures no extra space below the image */
+    object-fit: cover; /* Cover the entire card with the image prevents to distort image */
+    aspect-ratio: 2 / 1; /* Maintain a aspect ratio */
+  }
+  
+  .extras {
+    background-color: #f1eeee;
+    text-align: center;
+     }
+
+    

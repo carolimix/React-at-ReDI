@@ -1,0 +1,13 @@
+
+.wrapper {
+    max-width: 1080px;
+/*     margin: var(--nav-height) auto 0 auto; */
+}
+
+.container {
+    margin: 0;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 40px; 
+    justify-content: center;
+}
