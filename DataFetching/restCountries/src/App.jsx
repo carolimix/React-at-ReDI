@@ -1,12 +1,13 @@
 
 import './App.css'
-import CountriesView from './views/CountriesView'
+import Routing from './components/CountryCard/Routing'
 
 function App() {
  
   return (
     <>
-      <CountriesView />
+     {/*  <CountriesView /> */}
+     <Routing />
     </>
   )
 }
