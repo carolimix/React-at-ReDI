@@ -1,11 +1,11 @@
-
 import './App.css'
+import Lesson16 from './Lesson16/Lesson16'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
+    <Lesson16 />
     </>
   )
 }
